@@ -56,7 +56,7 @@ video { /*styling for video*/
 	width: 100%;
 	overflow: hidden;
 	height:100%;
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55))center center no-repeat, url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay.jpeg);
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55))center center no-repeat, url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay-e1477340536796.jpeg);
 	background-repeat: no-repeat, no-repeat, no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -375,7 +375,7 @@ border: none;
 	width: 100%;
 	overflow: hidden;
 	height:100%;
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55))center center no-repeat, url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay.jpeg);
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55))center center no-repeat, url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay-e1477340536796.jpeg);
 	background-repeat: no-repeat, no-repeat, no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -721,7 +721,7 @@ border: none;
 	//top: 55px;
 	content: '';
 	z-index: 30;
-	/*background: url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay.jpeg) no-repeat;*/
+	/*background: url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay-e1477340536796.jpeg) no-repeat;*/
 }
 /**/
 .line3{
@@ -729,7 +729,7 @@ border: none;
 	width: 100%;
 	overflow: hidden;
 	height:100%;
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55))center center no-repeat, url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay.jpeg);
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55))center center no-repeat, url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay-e1477340536796.jpeg);
 	background-repeat: no-repeat, no-repeat, no-repeat;
 	/*background: url(../images/line3Bg.jpg) center center no-repeat;*/
 	/*background:#3f2d28;*/
@@ -1209,7 +1209,7 @@ border: none;
 	width: 100%;
 	overflow: hidden;
 	height:100%;
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55))center center no-repeat, url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay.jpeg);
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55))center center no-repeat, url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay-e1477340536796.jpeg);
 	background-repeat: no-repeat, no-repeat, no-repeat;
 	/*background: url(../images/line5Bg.jpg) center center no-repeat;	*/
 	/*background:#3f2d28;*/
@@ -1489,7 +1489,7 @@ textarea {
 	overflow: hidden;
 	max-height:100%;
 	//background:#3f2d28;
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay.jpeg);
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay-e1477340536796.jpeg);
 	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
