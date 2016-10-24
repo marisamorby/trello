@@ -14,12 +14,50 @@ html{
 body{
 	font-family: 'Roboto', 'sans-serif';
 }
+
+video { /*styling for video*/
+	display:none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55))center center no-repeat;
+  	background-size: cover;
+  	transition: 1s opacity;
+  	opacity: 1;
+  	z-index: 1;
+}
+
+@media (min-width: 1024px){
+	video{
+		display: block;
+	}
+
+}
+
+.slicknav_menu::before{
+	display: none;
+}
+.stopfade { 
+   opacity: .5;
+}
+
+.fixed video{
+	opacity: 0;
+	pointer-events: none;
+
+}
 .headerLine{
 	position: relative;
 	width: 100%;
 	overflow: hidden;
 	height:100%;
-	background: url(../images/bgTop.jpg) center center no-repeat;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55))center center no-repeat, url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay.jpeg);
+	background-repeat: no-repeat, no-repeat, no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -40,6 +78,11 @@ body{
 	background-size: cover;
 	border-bottom: 150px solid white;
 	border-left: 3000px solid transparent;
+}
+
+.header-cont{
+	position: relative;
+	z-index: 5;
 }
 /*.container{
 	outline:1px solid #fc0;
@@ -145,6 +188,9 @@ border: none;
 	letter-spacing: -2px;
 }
 
+.camera_pag_ul {
+	visibility: hidden;
+}
 .slicknav_menu {
 	display:none;
 }
@@ -200,6 +246,7 @@ border: none;
 	.pic1Ab{
 		padding-bottom:0 !important;
 		margin-bottom:0;
+		float: left;
 	}
 	.camera_caption h2{
 		font-size: 65px;
@@ -280,7 +327,7 @@ border: none;
 }
 .project p{
 	font-family: 'Roboto', 'sans-serif';
-	font-size:13px;
+	font-size:16px;
 	font-weight:300;
 	margin-top: 16px;
 	line-height: 23px;
@@ -328,8 +375,8 @@ border: none;
 	width: 100%;
 	overflow: hidden;
 	height:100%;
-	background: url(../images/bgTop.jpg) center center no-repeat;
-	/*background:url(../images/line2.png) center center no-repeat;*/
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55))center center no-repeat, url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay.jpeg);
+	background-repeat: no-repeat, no-repeat, no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -399,7 +446,7 @@ border: none;
 }
 .Fresh p{
 	font-family: 'Roboto', 'sans-serif';
-	font-size: 13px;
+	font-size: 16px;
 	font-weight: 300;
 	margin-top: 12px;
 	line-height: 23px;
@@ -422,12 +469,12 @@ border: none;
 .Fully  h4{
 	//margin-left: 20px;
 }
-.fa-tablet{
+.fa-tablet, .fa-comment-o, .fa-rotate-right{
 	//margin-left: 20px;
 	width:73px;
-	background: url(../images/cir.png) no-repeat;
+	/*background: url(../images/cir.png) no-repeat;*/
 	padding: 26px;
-	font-size: 24px;
+	font-size: 36px;
 	color: #fff;
 	font-family: FontAwesome;
 	text-align: center;
@@ -473,14 +520,14 @@ border: none;
 }
 .team h5{
 	margin-top: -3px;
-	font-size:13px;
+	font-size:16px;
 	color:#a9a9a9;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
 }
 .team p{
 	margin-top: 12px;
-	font-size: 13px;
+	font-size: 16px;
 	color: #666;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
@@ -587,7 +634,7 @@ border: none;
 	line-height: 23px;
 	margin-top: 13px;
 	text-align:center;
-	font-size:13px;
+	font-size:16px;
 	color: #2f2f2f;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
@@ -614,14 +661,14 @@ border: none;
 	font-weight: 400;
 }
 .about h3{
-	margin-top: 51px;
+	margin-top: 20px;
 	font-size:16px;
 	color: #2f2f2f;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
 }
 .about p{
-	font-size: 13px;
+	font-size: 16px;
 	line-height: 22px;
 	color: #666666;
 	font-family: 'Roboto', 'sans-serif';
@@ -630,26 +677,33 @@ border: none;
 	margin-bottom: 0;
 }
 
-.pic1Ab{
+.pic2Ab{
 	padding-bottom: 15px;
 	float: right;
-	padding: 34px;
-	padding-top: 51px;
-	padding-right: 40px;
-	padding-bottom: 10px;
+	margin: 30px;
 }
-.about1{
+.about2{
 	float: right;
 	text-align: right;
 }
-.pic2Ab{
-	float: left;
-	padding: 40px;
-	padding-top: 51px;
-	padding-right: 37px;
-	padding-bottom: 39px;
+.img-circle{ /* Set the size of the about photos*/
+	max-width: 100%;
+	height: auto;
+
 }
-.about2{
+.pic1Ab{
+	float: center;
+	margin: 30px;
+}
+.about1{
+	float: left;
+	text-align: center;
+}
+.pic3Ab{
+	float: left;
+	margin: 30px;
+}
+.about3{
 	float: left;
 	text-align: left;
 }
@@ -667,7 +721,7 @@ border: none;
 	//top: 55px;
 	content: '';
 	z-index: 30;
-	background: url(../images/horL.png) no-repeat;
+	/*background: url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay.jpeg) no-repeat;*/
 }
 /**/
 .line3{
@@ -675,7 +729,8 @@ border: none;
 	width: 100%;
 	overflow: hidden;
 	height:100%;
-	background: url(../images/bgTop.jpg) center center no-repeat;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55))center center no-repeat, url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay.jpeg);
+	background-repeat: no-repeat, no-repeat, no-repeat;
 	/*background: url(../images/line3Bg.jpg) center center no-repeat;*/
 	/*background:#3f2d28;*/
 	-webkit-background-size: cover;
@@ -787,7 +842,7 @@ border: none;
 	text-decoration:none;
 	text-transform:uppercase;
 	color:#fff;
-	font-size: 13px;
+	font-size: 16px;
 	text-align:center;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 700;
@@ -832,7 +887,7 @@ border: none;
 	text-decoration:none;
 	text-transform:uppercase;
 	color:#fff;
-	font-size: 13px;
+	font-size: 16px;
 	text-align:center;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 700;
@@ -908,7 +963,7 @@ border: none;
 	background:none;
 	text-decoration:none;
 	color:#a9a9a9;
-	font-size: 13px;
+	font-size: 16px;
 	text-align:center;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
@@ -928,7 +983,7 @@ border: none;
 	font-style:normal;
 	display:inline-block;
 	font-family: FontAwesome;
-	font-size:13px;
+	font-size:16px;
 	color:#a9a9a9;
 }
 .view ul li{
@@ -955,7 +1010,7 @@ border: none;
 .view ul a{
 	display:inline-block;
 	color:#a9a9a9;
-	font-size: 13px;
+	font-size: 16px;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
 }
@@ -997,7 +1052,8 @@ border: none;
 	width: 100%;
 	overflow: hidden;
 	height:100%;
-	background: url(../images/bgTop.jpg) center center no-repeat;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55))center center no-repeat, url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay.jpeg);
+	background-repeat: no-repeat, no-repeat, no-repeat;
 	/*background: url(../images/line4.png) center center no-repeat;*/
 	/*background:#3f2d28;*/
 	-webkit-background-size: cover;
@@ -1066,7 +1122,7 @@ border: none;
 .news p{	
 	line-height: 23px;
 	color:#666666;
-	font-size: 13px;
+	font-size: 16px;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
 }
@@ -1074,7 +1130,7 @@ border: none;
 	color:#1fcdff;
 }
 .readMore i{
-	font-size:13px;
+	font-size:16px;
 }
 .news .readMore{
 	text-decoration:none;
@@ -1108,7 +1164,7 @@ border: none;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
 	color:#a9a9a9;
-	font-size:13px;
+	font-size:16px;
 	text-decoration:none;
 	list-style:none;
 }
@@ -1116,7 +1172,7 @@ border: none;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
 	color:#a9a9a9;
-	font-size:13px;
+	font-size:16px;
 	text-decoration:none;
 	list-style:none;
 }
@@ -1153,7 +1209,8 @@ border: none;
 	width: 100%;
 	overflow: hidden;
 	height:100%;
-	background: url(../images/bgTop.jpg) center center no-repeat;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55))center center no-repeat, url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay.jpeg);
+	background-repeat: no-repeat, no-repeat, no-repeat;
 	/*background: url(../images/line5Bg.jpg) center center no-repeat;	*/
 	/*background:#3f2d28;*/
 	-webkit-background-size: cover;
@@ -1211,7 +1268,7 @@ border: none;
 	border:0px;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
-	font-size:13px;
+	font-size:16px;
 	color:#555555;
 	background:#ededed;
 }
@@ -1244,7 +1301,7 @@ textarea {
 	border:0px;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
-	font-size:13px;
+	font-size:16px;
 	color:#555555;
 	background:#ededed;
 	border:none;
@@ -1259,7 +1316,7 @@ textarea {
 .forma .cBtn a{
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 700;
-	font-size:13px;
+	font-size:16px;
 	color:#fff;
 }
 
@@ -1299,7 +1356,7 @@ textarea {
 	margin-left: -33px;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
-	font-size:13px;
+	font-size:16px;
 	color:#666666;
 	margin-bottom: -80px;
 	z-index: 10;
@@ -1432,12 +1489,17 @@ textarea {
 	overflow: hidden;
 	max-height:100%;
 	//background:#3f2d28;
-	background: url(../images/line7Bg.jpg) center center no-repeat;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(https://marisamorby.com/app/uploads/2016/10/tiles-overlay.jpeg);
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+	background-size: cover;	
 	
+}
+
+.line7Font{
+	font-size: 60px;
 }
 /*.line7:after{
 	content: "";
@@ -1471,6 +1533,16 @@ textarea {
 	border-right: 3000px solid transparent;
 	//bottom: 489px;
 }
+
+.contactInfo{
+	text-align: center;
+}
+
+.behance{
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 3px;
+}
 .footer{
 	margin-top: 40px;
 	min-height:435px;
@@ -1493,14 +1565,14 @@ textarea {
 }
 .footer .fEmail{
 	float:left;
-	font-size: 13px;
+	font-size: 16px;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
 	border: 0;
 	background: #1c1c1c;
 	color: #fff;
 	padding: 11px;
-	width: 350px;
+	width: 300px;
 	border-radius: 4px 0px 0px 4px;
 	padding-left: 20px;
 }
@@ -1509,7 +1581,7 @@ textarea {
 }
 .footer .subS{
 	text-transform:uppercase;
-	font-size: 13px;
+	font-size: 16px;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 700;
 	float: left;
@@ -1761,12 +1833,12 @@ textarea {
 	margin-top: 127px;
 }
 .downLine p{
-	font-size:13px;
+	font-size:16px;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
 	color:#fff;
 }
-.lineBlack:before{
+/*.lineBlack:before{
 	top: 0;
 	content: "";
 	position: absolute;
@@ -1776,14 +1848,13 @@ textarea {
 	left: 0;
 	width: 100%;
 	height: 178px;
-	background: url(../images/bgBeforFooter.png) center center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+	background-size: cover;*/
 }
-.lineBlack input{
-	margin-top: 3px;
+/*.lineBlack input{
+	margin-top: 3px;*/
 }
 #downMenu{
 	float:right;
@@ -1800,7 +1871,7 @@ textarea {
 #downMenu li a{
 	padding: 15px;
 	text-decoration: none;
-	font-size: 13px;
+	font-size: 16px;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
 	color: #fff;
@@ -1817,7 +1888,7 @@ textarea {
 	max-width: 95px;
 	border:0;
 	background:#101010;
-	font-size:13px;
+	font-size:16px;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
 	color:#6d6d6d;
@@ -1874,6 +1945,9 @@ textarea {
 	}
 }
 
+.hide-me{
+	display:none !important;
+}
 /*isotop*/
 
 /* ---- button ---- */
@@ -1918,6 +1992,7 @@ margin-bottom: 35px !important;
 /*	PORTFOLIO
 /*-----------------------------------------------------------------------------------*/
 /* __________ Isotope Styles __________ */
+
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
@@ -2055,6 +2130,8 @@ margin-bottom: 35px !important;
 /*                                                                    */
 	.default{
 		transition-duration: 1s;
+		position: relative;
+		z-index: 5;
 	}
     .fixed {
 		transition-duration: 1s;
